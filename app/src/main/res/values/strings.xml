@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Cuisine</string>
+    <string name="random_receipt">Random receipt</string>
+    <string name="find">Find</string>
+    <string name="search_receipt">Search receipt</string>
+    <string name="servings">Servings: %d</string>
+    <string name="ready_in">Ready in: %d min.</string>
+    <string name="loading_result">Loading results...</string>
+    <string name="count_of_receipts">Counts of receipts:</string>
+    <string name="_1">1</string>
+    <string name="cancel">Cancel</string>
+    <string name="filter">Filter</string>
+    <string name="filter_query">Query</string>
+    <string name="next">Next</string>
+    <string name="info">Info</string>
+    <string name="details">Details</string>
+    <string name="save">Save</string>
+    <string name="instruction">Instruction:</string>
+</resources>

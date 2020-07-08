@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="item_height">300dp</dimen>
+    <dimen name="item_margin_horizontal">15dp</dimen>
+    <dimen name="item_margin_vertical">5dp</dimen>
+    <dimen name="item_image_height">180dp</dimen>
+</resources>

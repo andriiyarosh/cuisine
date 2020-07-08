@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_nav_graph"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.work.cuisine.presentation.main.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main">
+        <action
+            android:id="@+id/search_fragment_action"
+            app:destination="@id/searchFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/randomSearchAction"
+            app:destination="@id/randomSearchFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+        <action
+            android:id="@+id/receiptInfoAction"
+            app:destination="@id/receiptInfoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.work.cuisine.presentation.receipts.search.SearchReceiptFragment"
+        android:label="SearchReceiptFragment"
+        tools:layout="@layout/fragment_search_receipt">
+
+        <action
+            android:id="@+id/searchToInfoAction"
+            app:destination="@id/receiptInfoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/randomSearchFragment"
+        android:name="com.work.cuisine.presentation.receipts.random.RandomReceiptFragment"
+        android:label="RandomReceiptFragment"
+        tools:layout="@layout/fragment_random_receipt">
+
+        <action
+            android:id="@+id/randomToInfoAction"
+            app:destination="@id/receiptInfoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/receiptInfoFragment"
+        android:name="com.work.cuisine.presentation.receipts.info.ReceiptInfoFragment"
+        android:label="ReceiptInfoFragment"
+        tools:layout="@layout/fragment_receipt_info">
+
+        <argument
+            android:name="receiptId"
+            app:argType="long"
+            app:nullable="false" />
+    </fragment>
+</navigation>
