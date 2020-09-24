@@ -1,6 +1,6 @@
 package com.work.cuisine.di
 
-import com.work.cuisine.MainActivity
+import com.work.cuisine.presentation.activity.MainActivity
 import com.work.cuisine.presentation.receipts.info.ReceiptInfoFragment
 import com.work.cuisine.presentation.main.MainFragment
 import com.work.cuisine.presentation.receipts.random.RandomReceiptFragment

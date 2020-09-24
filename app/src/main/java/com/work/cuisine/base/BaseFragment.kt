@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import androidx.annotation.LayoutRes
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.work.cuisine.presentation.activity.NetworkStateObservable
 import dagger.android.support.DaggerFragment
 import javax.inject.Inject
 
@@ -27,6 +28,8 @@ open class BaseFragment<VM : ViewModel>(clazz: Class<VM>, @LayoutRes private val
         initListeners()
         initRecyclerView()
     }
+
+    protected fun getNetworkStateObservable() = requireActivity() as NetworkStateObservable
 
     protected open fun initObservers() = Unit
     protected open fun initListeners() = Unit
